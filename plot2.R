@@ -14,7 +14,7 @@ data$Sub_metering_3 <- as.numeric(data$Sub_metering_3)
 graphData <- data[data$Date=="1/2/2007" | data$Date=="2/2/2007",]
 
 #Output and draw graph
-png(filename="Rplot2.png", width=480, height=480, units="px") #comment out to write graph to screen
+png(filename="plot2.png", width=480, height=480, units="px") #comment out to write graph to screen
 
 plot(graphData$Datetime, graphData$Global_active_power, type = "n", ylab="Global Active Power (kilowatts)", xlab="")
 lines(graphData$Datetime, graphData$Global_active_power)
